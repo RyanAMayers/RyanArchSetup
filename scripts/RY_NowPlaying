@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo  $(playerctl metadata --format "{{ artist }} - {{ title }}")
+echo
+echo \#b8bb26

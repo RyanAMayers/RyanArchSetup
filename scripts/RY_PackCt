@@ -1,0 +1,7 @@
+#!/bin/sh
+
+TOT=$(pacman -Q | wc -l)
+EXP=$(pacman -Qe | wc -l)
+AUR=$(pacman -Qem | wc -l)
+
+echo " $TOT 󰣇 $EXP  $AUR"

@@ -1,0 +1,41 @@
+#!/bin/sh
+
+red=#cc241d
+yellow=#d79921
+
+STAT=$(cat /sys/class/power_supply/BAT0/status)
+LEVEL=$(cat /sys/class/power_supply/BAT0/capacity)
+COLOR=$yellow
+
+FULL=󱟢
+CHARGING=󰂄
+HIGH=󱊣
+MED=󱊢
+LOW=󱊡
+
+if [ "$LEVEL" -ge 65 ]
+then
+		ICON=$HIGH
+		COLOR=$yellow
+elif [ $LEVEL -lt 65 ] | [ $LEVEL -ge 35 ]
+then
+		ICON=$MED
+elif [ $LEVEL -lt 35 ]
+then
+		ICON=$LOW
+		COLOR=$red
+fi
+
+if [ "$STAT" = "Charging" ]
+then
+		ICON=$CHARGING
+fi
+
+if [ $STAT = Full ]
+then
+		ICON=$FULL
+fi
+
+echo $ICON $LEVEL
+echo $STAT
+echo $COLOR
