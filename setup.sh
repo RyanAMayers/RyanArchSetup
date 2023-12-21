@@ -26,7 +26,7 @@ cd $HOME
 
 rm -rf ~/yay
 
-yay -S --needed arandr bat blueman bluez bluez-utils brightnessctl btop cava discord dunst expac eza feh firefox font-manager htop hugo i3blocks i3lock i3status jre-openjdk-headless kitty libpulse lightdm lightdm-gtk-greeter maim man-db man-pages neofetch neovim network-manager-applet nvm pacman-contrib picom pipewire pipewire-alsa pipewire-jack pipewire-pulse playerctl ranger rofi smartmontools spotify spotify-tui spotifyd sysstat thefuck vi vim visual-studio-code-bin wget wireless_tools wireplumber xclip xdg-utils xdotool xorg-xinit xorg-xrandr yay zsh zsh-theme-powerlevel10k-git
+yay -S --needed arandr bat blueman bluez bluez-utils brightnessctl btop cava discord dunst expac eza feh firefox font-manager htop hugo i3blocks i3lock i3status jre-openjdk-headless kitty libpulse lightdm lightdm-gtk-greeter maim man-db man-pages neofetch neovim network-manager-applet nvm pacman-contrib picom pipewire pipewire-alsa pipewire-jack pipewire-pulse playerctl ranger rofi smartmontools spotify spotify-tui spotifyd sysstat thefuck vi vim visual-studio-code-bin wget wireless_tools wireplumber xclip xdg-utils xdotool xorg-xinit xorg-xrandr yay zsh zsh-theme-powerlevel10k-git fzf github-cli
 
 # PHASE TWO: Copy some configs
 
